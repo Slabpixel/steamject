@@ -68,15 +68,103 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 w-full h-210">
+          <div className="grid grid-cols-2 grid-rows-2 w-full h-210 text-foreground">
             <div className="bg-background rounded-2xl border border-slate-300 p-10 flex gap-16">
-
+              <div className="flex flex-col justify-between w-full max-w-32">
+                <p className="uppercase text-foreground/60 text-sm font-medium">Injection method</p>
+                <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
+                  <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+                </button>
+              </div>
+              <div className="flex flex-col justify-between">
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-medium leading-[1.16] tracking-[-0.03em]">Plasmid & BAC Injection</h3>
+                  <p className="text-foreground/60 leading-[1.6] font-medium tracking-tight">We inject plasmid and BAC transgenes for flexible experimental designs. RNA injection is available upon request.</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      Plasmid
+                    </p>
+                  </div>
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      BAC
+                    </p>
+                  </div>
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      RNA
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="row-span-2 bg-background rounded-2xl border border-slate-300 p-10 flex gap-16">
-
+            <div className="relative row-span-2 bg-background rounded-2xl border border-slate-300 p-10 flex gap-16">
+            <Image src="/embryo.png" alt="Embryo" width={1000} height={1000} className="absolute bottom-0 right-0" />
+              <div className="flex flex-col justify-between w-full max-w-32">
+                <p className="uppercase text-foreground/60 text-sm font-medium">Development phase</p>
+                <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
+                  <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+                </button>
+              </div>
+              <div className="flex flex-col justify-between">
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-medium leading-[1.16] tracking-[-0.03em]">Embryo Transfer</h3>
+                  <p className="text-foreground/60 leading-[1.6] font-medium tracking-tight">After injection of 100-150 mouse zygotes, we transfer embryos into pseudopregnant recipient females, ensuring optimal implantation and pup development.</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      Plasmid
+                    </p>
+                  </div>
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      BAC
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="bg-background rounded-2xl border border-slate-300 p-10 flex gap-16">
-
+              <div className="flex flex-col justify-between w-full max-w-32">
+                <p className="uppercase text-foreground/60 text-sm font-medium">Gene editing system</p>
+                <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
+                  <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+                </button>
+              </div>
+              <div className="flex flex-col justify-between">
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[2rem] font-medium leading-[1.16] tracking-[-0.03em]">CRISPR/Cas9 Integration</h3>
+                  <p className="text-foreground/60 leading-[1.6] font-medium tracking-tight">Pronuclear injection is widely used in the CRISPR/Cas9 era to introduce guide RNAs and templates that induce precise genetic modifications rapidly and efficiently.</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      Plasmid
+                    </p>
+                  </div>
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      BAC
+                    </p>
+                  </div>
+                  <div className="flex gap-3 h-9 justify-center items-center p-2 bg-slate-100 rounded-sm">
+                    <Image src="accent.svg" alt="Accent" width={16} height={16} />
+                    <p className="font-medium uppercase">
+                      RNA
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,14 +191,35 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border-x border-slate-300 h-100 w-full">
-
+          <div className="border-x border-slate-300 h-125 w-full flex justify-center items-center">
+            <div className="w-full max-w-178 rounded-lg backdrop-blur-[2px] p-4 bg-[#62748E1A] shadow-[824px_648px_250px_0px_rgba(0,0,0,0.00),527px_415px_250px_0px_rgba(0,0,0,0.01),297px_233px_226px_0px_rgba(0,0,0,0.04),132px_104px_168px_0px_rgba(0,0,0,0.07),33px_26px_92px_0px_rgba(0,0,0,0.08)]" >
+              <div className="flex flex-col justify-between gap-29 w-full p-4 bg-background rounded-sm">
+                <input type="textarea" placeholder="Search anything you want..." />
+                <div className="flex justify-between items-center">
+                  <div className="flex gap-2">
+                    <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-2.5 bg-slate-200 cursor-pointer">
+                      <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                    </button>
+                    <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 cursor-pointer">
+                      <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                      Create an Image
+                    </button>
+                    <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 cursor-pointer">
+                      <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                      Global Search
+                    </button>
+                  </div>
+                  <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-1 bg-secondary cursor-pointer">
+                      <Image src="/arrow-right.svg" alt="Arrow Right" width={16} height={16} />
+                    </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="features" className="relative bg-primary text-background overflow-hidden" >
         <div className="relative max-w-8xl px-7.5 py-12 mx-auto w-full flex flex-col gap-24">
-
           <div className="flex gap-25 items-end ">
             <div className="w-full max-w-150 font-medium tracking-[-0.03em] text-[4.5rem] leading-[1.16]">
               <h2>Analyzing <br /> <span className="text-background/40">Genetic Sequence</span></h2>
@@ -130,7 +239,9 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 w-full h-100">
+          <div className="flex justify-end items-center w-full min-h-175">
+            <Image src="/analyze.png" alt="DNA Analysis" width={1000} height={1000} className="absolute left-0 bottom-0" />
+            <Image src="/stat.svg" alt="Stat" width={350} height={252} />
           </div>
         </div>
       </section>

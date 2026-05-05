@@ -32,4 +32,5 @@ h5,
 h6 {
   font-family: var(--font-helvetica-neue), sans-serif;
   letter-spacing: -0.03em;
+  font-weight: 500;
 }
