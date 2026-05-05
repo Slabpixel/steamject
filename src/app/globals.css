@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #101010;
   --primary: #105adc;
+  --secondary: #3FA3FA;
   --spacing-8xl: 90rem;
 }
 
@@ -11,6 +12,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --font-body: var(--font-inter);
   --font-heading: var(--font-helvetica-neue);
   --spacing-8xl: var(--spacing-8xl);
