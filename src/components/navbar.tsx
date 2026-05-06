@@ -133,12 +133,12 @@ export default function Navbar() {
                     />
                 ))}
             </div>
-            <div ref={navRowRef} className="flex h-9.5 items-center justify-between font-medium">
+            <div ref={navRowRef} className="flex h-9.5 text-nowrap gap-2 items-center justify-between font-medium">
                 <div className="flex w-full max-w-150 items-center justify-between gap-4">
                     <Link href="/" className="bg-slate-200">
                         <div className="rounded-sm bg-slate-100 px-2.5 py-2 text-lg">Steámject</div>
                     </Link>
-                    <div className="relative flex items-center gap-2">
+                    <div className="relative flex items-center gap-2 max-md:hidden">
                         <Image src="/union-nav.svg" alt="Union" fill />
                         <Link href="#" className="relative px-2.5 py-2">
                             Tech
@@ -151,7 +151,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
-                <Link href="#" className="relative flex gap-2">
+                <Link href="#" className="relative flex gap-2 max-md:hidden">
                     <Image src="/union-nav-cta.svg" alt="Union" fill />
                     <div className="relative px-2.5 py-2">Contact Us</div>
                     <div className="relative flex items-center justify-center px-2.5 py-2">

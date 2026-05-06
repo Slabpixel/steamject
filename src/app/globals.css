@@ -34,3 +34,44 @@ h6 {
   letter-spacing: -0.03em;
   font-weight: 500;
 }
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.3333%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-33.3333%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-row {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.marquee-row-left {
+  animation: marquee-left 30s linear infinite;
+}
+
+.marquee-row-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+.marquee-row-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+  align-items: center;
+}
