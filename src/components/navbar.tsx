@@ -121,7 +121,7 @@ export default function Navbar() {
     );
 
     return (
-        <nav className="fixed top-6 left-0 right-0 z-50 mx-auto flex w-full max-w-8xl flex-col gap-6 px-7.5">
+        <nav className="fixed top-6 left-0 right-0 z-50 mx-auto flex w-full max-w-8xl flex-col gap-6 px-7.5 max-md:top-4 max-md:px-4 max-md:gap-4">
             <div ref={linesWrapperRef} className="flex h-[18px] items-stretch justify-between overflow-hidden">
                 {Array.from({ length: lineCount }, (_, index) => (
                     <span
@@ -151,10 +151,17 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
+                <Link href="#" className="relative shrink-0 flex gap-2 md:hidden">
+                    <Image src="/union-nav-cta.svg" alt="Union" fill className="w-full h-full" />
+                    <div className="relative px-2.5 py-2.5">Contact</div>
+                    <div className="relative flex items-center justify-center px-2.5 py-2.5">
+                        <Image src="/chevron-right.svg" alt="Chevron Right" width={10} height={16} />
+                    </div>
+                </Link>
                 <Link href="#" className="relative flex gap-2 max-md:hidden">
                     <Image src="/union-nav-cta.svg" alt="Union" fill />
                     <div className="relative px-2.5 py-2">Contact Us</div>
-                    <div className="relative flex items-center justify-center px-2.5 py-2">
+                    <div className="relative flex items-center shrink-0 justify-center px-2.5 py-2">
                         <Image src="/chevron-right.svg" alt="Chevron Right" width={10} height={16} />
                     </div>
                 </Link>

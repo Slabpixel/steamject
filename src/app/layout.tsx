@@ -34,7 +34,7 @@ export default function RootLayout({
       className={`${inter.variable} ${helveticaNeue.variable} h-full antialiased`}
     >
       <Provider>
-        <body className="min-h-full flex flex-col">
+        <body className="min-h-full flex flex-col max-md:overflow-x-hidden">
           <Navbar />
           {children}</body>
       </Provider>

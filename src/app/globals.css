@@ -75,3 +75,9 @@ h6 {
   gap: 20px;
   align-items: center;
 }
+
+@media (max-width: 767px) {
+  .marquee-row-group {
+    gap: 12px;
+  }
+}
