@@ -27,8 +27,8 @@ export default function FeaturesServicesSection() {
           <div data-reveal className="bg-background rounded-2xl border border-slate-300 p-10 flex gap-16 max-md:flex-col max-md:gap-6 max-md:p-6">
             <div className="flex flex-col gap-4 justify-between w-full max-w-32">
               <p className="uppercase text-foreground/60 text-sm font-medium">Injection method</p>
-              <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
-                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+              <button className="cursor-pointer relative z-1 hover:bg-secondary/80 group transition-colors bg-secondary flex justify-center items-center rounded-md size-14">
+                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} className="group-hover:scale-110 transition-transform" />
               </button>
             </div>
             <div className="flex flex-col justify-between max-md:gap-6">
@@ -56,8 +56,8 @@ export default function FeaturesServicesSection() {
             <Image src="/embryo.png" alt="Embryo" width={1000} height={1000} className="absolute bottom-0 right-0 max-md:w-full max-md:h-auto max-md:opacity-80" />
             <div className="flex flex-col gap-4 justify-between w-full max-w-32">
               <p className="uppercase text-foreground/60 text-sm font-medium">Development phase</p>
-              <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
-                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+              <button className="cursor-pointer relative z-1 hover:bg-secondary/80 group transition-colors bg-secondary flex justify-center items-center rounded-md size-14">
+                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} className="group-hover:scale-110 transition-transform" />
               </button>
             </div>
             <div className="flex flex-col justify-between max-md:gap-6 max-md:relative max-md:z-1">
@@ -80,8 +80,8 @@ export default function FeaturesServicesSection() {
           <div data-reveal className="bg-background rounded-2xl border border-slate-300 p-10 flex gap-16 max-md:flex-col max-md:gap-6 max-md:p-6">
             <div className="flex flex-col gap-4 justify-between w-full max-w-32">
               <p className="uppercase text-foreground/60 text-sm font-medium">Gene editing system</p>
-              <button className="cursor-pointer bg-secondary flex justify-center items-center rounded-md size-14">
-                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} />
+              <button className="cursor-pointer relative z-1 hover:bg-secondary/80 group transition-colors bg-secondary flex justify-center items-center rounded-md size-14">
+                <Image src="/arrow-right.svg" alt="Arrow" width={24} height={24} className="group-hover:scale-110 transition-transform" />
               </button>
             </div>
             <div className="flex flex-col justify-between max-md:gap-6">
