@@ -81,3 +81,15 @@ h6 {
     gap: 12px;
   }
 }
+
+.split-link-char {
+  display: inline-block;
+  will-change: transform;
+}
+
+.split-link-char-mask {
+  display: inline-block;
+  overflow: clip;
+  vertical-align: top;
+  line-height: 1;
+}

@@ -1,11 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import AnimatedLink from "@/components/ui/animated-link";
+import { AnimatedText } from "@/components/ui/animated-text";
+import { registerGsap } from "@/lib/gsap/register";
 
 const INACTIVE_STROKE = "#E2E8F0";
 const ACTIVE_STROKE = "#90A1B9";
@@ -33,7 +36,7 @@ export default function Navbar() {
 
     useGSAP(
         () => {
-            gsap.registerPlugin(ScrollTrigger);
+            registerGsap();
 
             const wrapper = linesWrapperRef.current;
             if (!wrapper) return;
@@ -67,6 +70,8 @@ export default function Navbar() {
 
     useGSAP(
         () => {
+            registerGsap();
+
             const navRow = navRowRef.current;
             if (!navRow) return;
             let lastToggleScroll = 0;
@@ -140,27 +145,27 @@ export default function Navbar() {
                     </Link>
                     <div className="relative flex items-center gap-2 max-md:hidden">
                         <Image src="/union-nav.svg" alt="Union" fill />
-                        <Link href="#" className="relative px-2.5 py-2">
+                        <AnimatedLink href="#" className="relative px-1.5 py-2">
                             Tech
-                        </Link>
-                        <Link href="#" className="relative px-2.5 py-2">
+                        </AnimatedLink>
+                        <AnimatedLink href="#" className="relative px-1.5 py-2">
                             About Us
-                        </Link>
-                        <Link href="#" className="relative px-2.5 py-2">
+                        </AnimatedLink>
+                        <AnimatedLink href="#" className="relative px-1.5 py-2">
                             Journal
-                        </Link>
+                        </AnimatedLink>
                     </div>
                 </div>
                 <Link href="#" className="relative shrink-0 flex gap-2 md:hidden">
                     <Image src="/union-nav-cta.svg" alt="Union" fill className="w-full h-full" />
-                    <div className="relative px-2.5 py-2.5">Contact</div>
+                    <AnimatedText className="relative px-2.5 py-2.5">Contact</AnimatedText>
                     <div className="relative flex items-center justify-center px-2.5 py-2.5">
                         <Image src="/chevron-right.svg" alt="Chevron Right" width={10} height={16} />
                     </div>
                 </Link>
                 <Link href="#" className="relative flex gap-2 max-md:hidden">
                     <Image src="/union-nav-cta.svg" alt="Union" fill />
-                    <div className="relative px-2.5 py-2">Contact Us</div>
+                    <AnimatedText className="relative px-2.5 py-2">Contact Us</AnimatedText>
                     <div className="relative flex items-center shrink-0 justify-center px-2.5 py-2">
                         <Image src="/chevron-right.svg" alt="Chevron Right" width={10} height={16} />
                     </div>
