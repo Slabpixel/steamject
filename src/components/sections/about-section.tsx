@@ -70,19 +70,19 @@ export default function AboutSection({ marqueeRows }: AboutSectionProps) {
               <input type="textarea" placeholder="Search anything you want..." className="max-md:text-sm border-0 focus:outline-none" />
               <div className="flex justify-between items-center max-md:flex-col max-md:items-stretch max-md:gap-3">
                 <div className="flex gap-2 max-md:flex-wrap">
-                  <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-2.5 bg-slate-200 cursor-pointer shrink-0">
-                    <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                  <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-2.5 bg-slate-200 hover:bg-slate-300 transition-colors cursor-pointer shrink-0">
+                    <Image src="/paperclip.svg" alt="" width={16} height={16} />
                   </button>
-                  <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 cursor-pointer max-md:text-sm max-md:px-2.5">
-                    <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                  <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 hover:bg-slate-300 transition-colors cursor-pointer max-md:text-sm max-md:px-2.5">
+                    <Image src="/image.svg" alt="" width={16} height={16} />
                     Create an Image
                   </button>
-                  <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 cursor-pointer max-md:text-sm max-md:px-2.5">
-                    <Image src="/paperclip.svg" alt="Attach" width={16} height={16} />
+                  <button className="flex text-foreground/70 justify-center gap-2.5 items-center rounded-sm h-10 py-2.5 px-3.5 bg-slate-200 hover:bg-slate-300 transition-colors cursor-pointer max-md:text-sm max-md:px-2.5">
+                    <Image src="/globe.svg" alt="" width={16} height={16} />
                     Global Search
                   </button>
                 </div>
-                <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-1 bg-secondary cursor-pointer max-md:self-end">
+                <button className="flex justify-center gap-2.5 items-center rounded-sm size-10 p-1 bg-secondary transition-colors hover:bg-secondary/80 cursor-pointer max-md:self-end">
                   <Image src="/arrow-right.svg" alt="Arrow Right" width={16} height={16} />
                 </button>
               </div>
